@@ -1,0 +1,10 @@
+# Build Neural Project into .exe
+# Run this command in PowerShell:
+
+python build_exe.py
+
+# Or manually with PyInstaller:
+# pip install pyinstaller
+# pyinstaller --onefile --windowed --name=NeuralProject --add-data "neural_core;neural_core" --add-data "adapters;adapters" --hidden-import=numpy --hidden-import=scipy --hidden-import=sklearn --collect-all=numpy --collect-all=scipy --collect-all=sklearn main.py
+
+# The executable will be created in the 'dist' folder as NeuralProject.exe
